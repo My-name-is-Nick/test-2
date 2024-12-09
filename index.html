@@ -3,10 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mijn Website</title>
+    <title>Onderzoek Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: #f4f4f4;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 2rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        footer {
+            background-color: #333;
+            color: #f4f4f4;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #666;
+            border-radius: 5px;
+            background-color: #222;
+            color: #f4f4f4;
+        }
+        .contact-form button {
+            background-color: #555;
+            color: #f4f4f4;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #777;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welkom op deze website Nina! ILV!</h1>
-    <p>Deze site is gemaakt met GitHub Pages.</p>
+
+<header>
+    <h1>Welkom op mijn Onderzoek Website</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <section id="home" class="section">
+        <h2>Algemene Informatie</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum efficitur ligula, vel tempus nunc congue id. Integer consequat, lorem at hendrerit consequat, tortor nisl facilisis sapien, vitae vestibulum velit ligula ac nunc. Phasellus dictum fermentum tellus, in venenatis augue tincidunt id.</p>
+        <p>Nulla facilisi. Ut nec quam at libero volutpat ultricies. Sed quis risus a nibh fermentum vehicula. Praesent vitae nibh id quam auctor laoreet. Suspendisse potenti.</p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Jouw Naam" required>
+            <input type="email" name="email" placeholder="Jouw E-mailadres" required>
+            <textarea name="message" rows="5" placeholder="Jouw Bericht" required></textarea>
+            <button type="submit">Verstuur</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Onderzoek Website. Alle rechten voorbehouden.</p>
+</footer>
+
+<script>
+    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Bedankt voor je bericht! Ik neem spoedig contact met je op.');
+    });
+</script>
+
 </body>
 </html>
