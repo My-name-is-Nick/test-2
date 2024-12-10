@@ -3,150 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onderzoek Website</title>
-
-    <!-- Google Fonts voor modern lettertype -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif; /* Modern lettertype */
-            margin: 0;
-            padding: 0;
-            background-color: #f7f8fa; /* Lichte achtergrondkleur */
-            color: #333; /* Donkergrijze tekstkleur voor betere leesbaarheid */
-        }
-
-        /* Header */
-        header {
-            background-color: #0078d4; /* Blauwe kleur geïnspireerd door Qualtrics */
-            padding: 2rem 0;
-            text-align: center;
-            color: #fff;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 3rem;
-        }
-
-        /* Navigatiebalk */
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #005fa3; /* Dieper blauw voor de navigatie */
-            padding: 1rem 0;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 2rem;
-            font-weight: 500;
-            font-size: 1.1rem;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Algemene Informatie sectie met afbeelding */
-        #home {
-            position: relative;
-            background-image: url('https://drive.google.com/uc?id=1sRwsyDxTgjduNqh5QlVH3SuSg5OWiY7V'); /* Jouw afbeelding als achtergrond */
-            background-size: cover;
-            background-position: center;
-            padding: 6rem 2rem;
-            color: #fff;
-            text-align: center;
-        }
-        #home h2 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-        }
-        #home p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-        }
-
-        /* Contact sectie */
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            max-width: 600px;
-            margin: 3rem auto;
-            background-color: #fff;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            margin-bottom: 1.5rem;
-            padding: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            background-color: #f7f7f7;
-            color: #333;
-            font-size: 1rem;
-        }
-        .contact-form button {
-            background-color: #0078d4;
-            color: #fff;
-            border: none;
-            padding: 1rem 1.5rem;
-            cursor: pointer;
-            font-size: 1.1rem;
-            border-radius: 5px;
-        }
-        .contact-form button:hover {
-            background-color: #005fa3;
-        }
-
-        footer {
-            background-color: #0078d4;
-            color: #fff;
-            text-align: center;
-            padding: 1.5rem;
-            margin-top: 3rem;
-        }
-    </style>
+    <title>Nick van der Klein - Freelance Brand Researcher</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigatie -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#over-mij">Over Mij</a></li>
+                <li><a href="#mijn-werk">Mijn Werk</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <h1>Freelance researcher nodig?</h1>
-</header>
-
-<nav>
-    <a href="#home">Home</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<div class="container">
-    <section id="home">
-        <h2>Algemene Informatie</h2>
-        <p>Welkom op mijn website! Als freelance onderzoeker help ik bedrijven en organisaties met data-analyse, marktonderzoek, en strategisch advies. Mijn expertise ligt in het vertalen van complexe data naar waardevolle inzichten.</p>
+    <!-- Homepagina -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Nick van der Klein</h1>
+            <p>Freelance Brand Researcher</p>
+            <img src="chart-upwards.png" alt="Stijgende grafiek" class="hero-image">
+        </div>
     </section>
 
+    <!-- Over mij -->
+    <section id="over-mij">
+        <h2>Over Mij</h2>
+        <p><strong>Nick van der Klein, MSc.</strong></p>
+        <p>Marketing Management & Analytics</p>
+        <p>Drie jaar ervaring als brand health en strategie researcher bij Unravel.</p>
+        <p>Diepgaande kennis uit de werken van Byron Sharp, zoals *How Brands Grow*.</p>
+    </section>
+
+    <!-- Mijn werk -->
+    <section id="mijn-werk">
+        <h2>Mijn Werk</h2>
+        <ul>
+            <li><a href="link1.html">Artikel 1: [Titel van Artikel]</a></li>
+            <li><a href="link2.html">Artikel 2: [Titel van Artikel]</a></li>
+            <li><a href="link3.html">Artikel 3: [Titel van Artikel]</a></li>
+        </ul>
+    </section>
+
+    <!-- Contact -->
     <section id="contact">
         <h2>Contact</h2>
-        <form class="contact-form">
-            <input type="text" name="name" placeholder="Jouw Naam" required>
-            <input type="email" name="email" placeholder="Jouw E-mailadres" required>
-            <textarea name="message" rows="5" placeholder="Jouw Bericht" required></textarea>
-            <button type="submit">Verstuur</button>
-        </form>
+        <p>Neem contact op via <a href="mailto:nick@example.com">nick@example.com</a></p>
+        <p>Of volg me op <a href="https://linkedin.com/in/nickvanderklein">LinkedIn</a>.</p>
     </section>
-</div>
 
-<footer>
-    <p>&copy; 2024 Onderzoek Website. Alle rechten voorbehouden.</p>
-</footer>
-
-<script>
-    document.querySelector('.contact-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        alert('Bedankt voor je bericht! Ik neem spoedig contact met je op.');
-    });
-</script>
-
+    <footer>
+        <p>&copy; 2024 Nick van der Klein</p>
+    </footer>
 </body>
 </html>
