@@ -11,12 +11,19 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            background: #f9f9f9;
+            color: #333;
         }
 
         header {
             background: #333;
             color: #fff;
             padding: 1rem 0;
+            transition: background 0.3s ease;
+        }
+
+        header:hover {
+            background: #444;
         }
 
         header ul {
@@ -35,12 +42,23 @@
             color: #fff;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s ease;
         }
 
+        header ul li a:hover {
+            color: #f1c40f;
+        }
+
+        /* Hero sectie */
         .hero {
             text-align: center;
-            padding: 2rem;
+            padding: 3rem 1rem;
             background: #f4f4f4;
+            transition: background 0.3s ease;
+        }
+
+        .hero:hover {
+            background: #e3e3e3;
         }
 
         .hero h1 {
@@ -48,22 +66,62 @@
             color: #333;
         }
 
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
         .hero-image {
             max-width: 80%;
             height: auto;
             margin-top: 1rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
         }
 
+        .hero-image:hover {
+            transform: scale(1.05);
+        }
+
+        /* Secties */
         section {
             padding: 2rem;
-            margin: 1rem auto;
-            max-width: 800px;
+            margin: 2rem auto;
+            max-width: 900px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
             color: #333;
             text-align: center;
             margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .strategy-images {
+            display: flex;
+            justify-content: space-around;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .strategy-images img {
+            width: 45%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .strategy-images img:hover {
+            transform: scale(1.05);
         }
 
         footer {
@@ -71,9 +129,25 @@
             background: #333;
             color: #fff;
             padding: 1rem 0;
-            position: fixed;
-            bottom: 0;
+            position: relative;
             width: 100%;
+            bottom: 0;
+            transition: background 0.3s ease;
+        }
+
+        footer:hover {
+            background: #444;
+        }
+
+        /* Flexbox voor de navigatie */
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
         }
     </style>
 </head>
@@ -85,6 +159,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#over-mij">Over Mij</a></li>
                 <li><a href="#mijn-werk">Mijn Werk</a></li>
+                <li><a href="#mijn-strategie">Mijn Strategie</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -119,6 +194,18 @@
         </ul>
     </section>
 
+    <!-- Mijn Strategie -->
+    <section id="mijn-strategie">
+        <h2>Mijn Strategie</h2>
+        <p>Mijn werk is gebaseerd op strategische inzichten die de merkgezondheid en het groeipotentieel versterken. Hier zijn enkele visuele voorbeelden van mijn aanpak.</p>
+        <div class="strategy-images">
+            <img src="1.png" alt="Strategie Afbeelding 1">
+            <img src="2.png" alt="Strategie Afbeelding 2">
+            <img src="3.png" alt="Strategie Afbeelding 3">
+            <img src="4.png" alt="Strategie Afbeelding 4">
+        </div>
+    </section>
+
     <!-- Contact -->
     <section id="contact">
         <h2>Contact</h2>
@@ -131,3 +218,4 @@
     </footer>
 </body>
 </html>
+
