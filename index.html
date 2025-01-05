@@ -3,343 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nick van der Klein - Freelance Marketing (Brand, Strategy & Communication) Researcher</title>
+    <title>Nick van der Klein - Freelance Brand Growth & Strategy Researcher</title>
     <style>
-        /* Algemene stijlen */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Open Sans', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-            background-color: #f1e6fa; /* Lichte paarse achtergrondkleur */
+            background-color: #fff;
             color: #333;
         }
 
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            transition: background 0.3s ease;
-        }
-
-        header:hover {
-            background: #444;
-        }
-
-        header ul {
-            list-style: none;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-
-        header ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        header ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        header ul li a:hover {
-            color: #f1c40f;
-        }
-
-        /* Hero sectie */
-        .hero {
-            text-align: center;
-            padding: 3rem 1rem;
-            background: #f4f4f4;
-            transition: background 0.3s ease;
-        }
-
-        .hero:hover {
-            background: #e3e3e3;
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            color: #333;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            color: #666;
-        }
-
-        .hero-image {
-            max-width: 80%;
-            height: auto;
-            margin-top: 1rem;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-        }
-
-        .hero-image:hover {
-            transform: scale(1.05);
-        }
-
-        /* Call to Action button */
-        .cta-button {
-            display: inline-block;
-            background-color: #f1c40f;
-            color: #333;
-            padding: 15px 30px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-top: 2rem;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .cta-button:hover {
-            background-color: #e1b10f;
-            transform: translateY(-3px);
-        }
-
-        /* Secties */
-        section {
-            padding: 2rem;
-            margin: 2rem auto;
-            max-width: 900px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        section:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: #333;
-            text-align: center;
-            margin-bottom: 1rem;
-            font-size: 2rem;
-        }
-
-        .article-title {
-            font-size: 2rem;
-            color: #333;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            text-align: center;
-        }
-
-        .article-link {
-            color: #f1c40f;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        .article-link:hover {
-            color: #e1b10f;
-        }
-
-        /* Strategie sectie - Afbeeldingen onder elkaar en breedte aanpassen */
-        .strategy-images {
+        .container {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            gap: 1.5rem;
-            width: 100%; /* Volledige breedte */
-            margin-top: 2rem;
-        }
-
-        .strategy-images img {
-            width: 100%; /* Volledige breedte van de container */
-            max-width: 100%;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-        }
-
-        .strategy-images img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Contact Sectie - Waar is Nick te vinden? */
-        #waar-is-nick {
-            background-color: #fff;
-            padding: 3rem 1rem;
-            text-align: center;
-            color: #333;
-            margin-top: 3rem;
-        }
-
-        #waar-is-nick h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        #waar-is-nick p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            color: #666;
-        }
-
-        .contact-button {
-            display: inline-block;
-            background-color: #f1c40f;
-            color: #333;
-            padding: 15px 25px;
-            font-size: 1rem;
-            font-weight: bold;
-            border-radius: 5px;
-            text-decoration: none;
-            margin: 10px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .contact-button:hover {
-            background-color: #e1b10f;
-            transform: translateY(-3px);
-        }
-
-        footer {
-            text-align: center;
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            position: relative;
-            width: 100%;
-            bottom: 0;
-            transition: background 0.3s ease;
-        }
-
-        footer:hover {
-            background: #444;
-        }
-
-        /* Flexbox voor de navigatie */
-        nav ul {
-            display: flex;
             justify-content: center;
-            align-items: center;
-        }
-
-        nav ul li {
-            margin: 0 20px;
-        }
-
-        /* Stijl voor de 'Over Mij' sectie */
-        #over-mij {
+            align-items: flex-start;
+            min-height: 100vh;
             padding: 2rem;
-            margin-top: 3rem;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        #over-mij h2 {
+        h1 {
             font-size: 2.5rem;
-            color: #333;
-            margin-bottom: 1.5rem;
-            text-align: center;
+            margin: 0 0 0.5rem 0;
+            color: #000;
         }
 
-        #over-mij p {
+        p {
             font-size: 1.2rem;
-            color: #666;
-            line-height: 1.8;
-            text-align: center;
-            margin-bottom: 1.5rem;
-        }
-
-        #over-mij p strong {
-            font-weight: bold;
+            margin: 0;
+            color: #555;
         }
     </style>
 </head>
 <body>
-    <!-- Navigatie -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#over-mij">Over Mij</a></li>
-                <li><a href="#mijn-werk">Mijn Werk</a></li>
-                <li><a href="#mijn-strategie">Mijn Strategie</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Homepagina -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Nick van der Klein</h1>
-            <p>Freelance Brand Researcher</p>
-            <!-- Afbeelding toegevoegd -->
-            <img src="Nick_VIP_1.jpeg" alt="Professionele afbeelding van Nick van der Klein" class="hero-image">
-            <!-- Call to action knop -->
-            <a href="#contact" class="cta-button">Neem Direct Contact Op</a>
-        </div>
-    </section>
-
-    <!-- Mijn werk -->
-    <section id="mijn-werk">
-        <h2>Mijn Werk</h2>
-
-        <!-- Eerste artikel -->
-        <div>
-            <h3 class="article-title">Merkgroei: zo draai je aan de juiste knoppen van je marketingstrategie</h3>
-            <p><a href="https://www.frankwatching.com/archive/2024/09/19/merkgroei-draaien-aan-de-juiste-knoppen-marketingstrategie/" class="article-link" target="_blank">Lees het volledige artikel hier</a></p>
-        </div>
-
-        <!-- Tweede artikel -->
-        <div>
-            <h3 class="article-title">Odido: een sterk merk, of nog werk aan de winkel?</h3>
-            <p><a href="https://www.frankwatching.com/archive/2023/10/27/odido-rebranding-merkimago-onderzoek/" class="article-link" target="_blank">Lees het volledige artikel hier</a></p>
-        </div>
-
-        <!-- Derde artikel -->
-        <div>
-            <h3 class="article-title">Herken jij Coolblue’s fluitje? 9 van de 10 Nederlanders niet. Dit is waarom…</h3>
-            <p><a href="https://www.frankwatching.com/archive/2024/01/05/coolblue-fluitje-uniek-en-herkenbaar/" class="article-link" target="_blank">Lees het volledige artikel hier</a></p>
-        </div>
-
-        <!-- Vierde artikel -->
-        <div>
-            <h3 class="article-title">Hoe Reclamemakers Slim Gebruik Maken van de Biases in jouw Brein</h3>
-            <p><a href="https://www.unravelresearch.com/blog/hoe-reclamemakers-slim-gebruik-maken-van-de-biases-in-jouw-brein?highlight=WyJuaWNrIl0=" class="article-link" target="_blank">Lees het volledige artikel hier</a></p>
-        </div>
-
-        <!-- Vijfde artikel -->
-        <div>
-            <h3 class="article-title">Can Catchy Jingles and Music Capture Consumer Attention during Multitasking? <span style="font-size: 0.8rem; color: #666;">(Appeared in the NSMBA Yearbook 2023)</span></h3>
-            <p><a href="https://www.newneuromarketing.com/can-catchy-jingles-and-music-capture-consumer-attention-during-multitasking" class="article-link" target="_blank">Lees het volledige artikel hier</a></p>
-        </div>
-
-        <!-- Zesde artikel -->
-        <div>
-            <h3 class="article-title">Vergeet het weghalen van eurotekens, met deze heuristiek maakt Bol.com de prijspijn in het Grote Speelgoedboek nog kleiner</h3>
-            <p><a href="https://www.unravelbehavior.com/blog/vergeet-het-weghalen-van-eurotekens-met-deze-heuristiek-maakt-bol-com-de-prijspijn-in-het-grote-speelgoedboek-nog-kleiner" class="article-link" target="_blank">Lees het volledige artikel hier</a></p>
-        </div>
-    </section>
-
-    <!-- Waar is Nick te vinden? -->
-    <section id="waar-is-nick">
-        <h2>Waar is Nick te vinden?</h2>
-        <p>Nick is momenteel ergens langs de oostkust Down Under 🇦🇺</p>
-        <div>
-            <a href="mailto:nickvanderklein@gmail.com" class="contact-button">Email</a>
-            <a href="tel:+610490890099" class="contact-button">Bel Nick</a>
-            <a href="https://www.linkedin.com/in/nickvanderklein/" class="contact-button">LinkedIn</a>
-            <a href="https://www.frankwatching.com/archive/author/nick-van-der-klein/" class="contact-button">Frankwatching</a>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Nick van der Klein</p>
-    </footer>
+    <div class="container">
+        <h1>Nick van der Klein</h1>
+        <p>Freelance Brand Growth & Strategy Researcher</p>
+    </div>
 </body>
 </html>
-
