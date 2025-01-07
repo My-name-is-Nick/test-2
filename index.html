@@ -1,145 +1,185 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nick van der Klein - Freelance Brand Growth & Strategy Researcher</title>
+    <title>Website Clone</title>
     <style>
-        /* Algemene stijl */
+        /* Algemene stijlen */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fff7f3;
+            box-sizing: border-box;
             color: #333;
         }
 
         header {
-            background: #ff6b6b;
-            color: white;
-            padding: 1rem;
+            background-color: #f3f4f6;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1a73e8;
+        }
+
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        header nav a:hover {
+            color: #1a73e8;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 40px;
+            background-color: #ffffff;
+        }
+
+        .hero .text {
+            max-width: 50%;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #1a73e8;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .hero button {
+            background-color: #1a73e8;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .hero button:hover {
+            background-color: #1558b3;
+        }
+
+        .hero img {
+            max-width: 40%;
+            border-radius: 10px;
+        }
+
+        .section {
+            padding: 40px;
+            background-color: #f9fafb;
             text-align: center;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
+        .section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
         }
 
-        nav ul {
-            list-style: none;
-            padding: 0;
+        .section p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .section .cards {
             display: flex;
             justify-content: center;
-            gap: 1rem;
+            gap: 20px;
         }
 
-        nav ul li {
-            display: inline;
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #1a73e8;
         }
 
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        .reviews {
-            background-color: #ffe3dc;
-            padding: 3rem 1rem;
-            text-align: center;
-        }
-
-        .reviews h2 {
-            color: #ff6b6b;
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .review-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            padding: 0 1rem;
-        }
-
-        .review {
-            background: #fff;
-            border-radius: 12px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .review p {
-            font-size: 1rem;
-            line-height: 1.5;
-            color: #555;
-        }
-
-        .review strong {
-            display: block;
-            margin-top: 1rem;
-            font-size: 1.1rem;
-            color: #333;
-        }
-
-        .review span {
-            font-size: 0.9rem;
-            color: #777;
+        .card p {
+            font-size: 16px;
         }
 
         footer {
-            background: #333;
-            color: white;
+            padding: 20px;
             text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
+            background-color: #f3f4f6;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
+    <header>
+        <div class="logo">Blauw</div>
+        <nav>
+            <a href="#">Expertises</a>
+            <a href="#">Methoden</a>
+            <a href="#">Branches</a>
+            <a href="#">Cases</a>
+            <a href="#">Over ons</a>
+        </nav>
+    </header>
 
-<header>
-    <h1>Nick van der Klein</h1>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#strategy">Mijn Strategie</a></li>
-            <li><a href="#reviews">Reviews</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section id="reviews" class="reviews">
-    <h2>Vertrouwd door klanten uit allerlei branches</h2>
-    <div class="review-container">
-        <div class="review">
-            <p>"Nick heeft onze merkstrategie volledig vernieuwd en onze zichtbaarheid vergroot. Binnen een jaar zagen we een groei van 200%."</p>
-            <strong>Lodewijk van Nooten</strong>
-            <span>Eigenaar Bikeshift</span>
+    <section class="hero">
+        <div class="text">
+            <h1>Working together for market-driven growth</h1>
+            <p>Market research firm Blauw Research generates the right insights and helps you make better choices that lead to continuous growth.</p>
+            <button>Learn More</button>
         </div>
-        <div class="review">
-            <p>"Victor is slim, werkt snel en vindt altijd een technische/digitale oplossing voor mijn non-digitale ideeën!"</p>
-            <strong>Sophie Brouwer</strong>
-            <span>Human Dimensions</span>
-        </div>
-        <div class="review">
-            <p>"Dankzij onze nieuwe veilingwebsite kunnen onze supporters vanaf overal en op ieder moment bieden op onze kavels! Fijn voor hen en ons."</p>
-            <strong>Jelle Schouten</strong>
-            <span>ASCveiling.nl</span>
-        </div>
-    </div>
-</section>
+        <img src="https://via.placeholder.com/600x400" alt="Hero Image">
+    </section>
 
-<footer>
-    <p>&copy; 2024 Nick van der Klein</p>
-</footer>
+    <section class="section">
+        <h2>Our Expertise</h2>
+        <p>Discover our wide range of services to help you achieve your business goals.</p>
+        <div class="cards">
+            <div class="card">
+                <h3>Quantitative Research</h3>
+                <p>Understand the attitudes, perceptions, and behaviors of your target audience in a quantitative manner.</p>
+            </div>
+            <div class="card">
+                <h3>Qualitative Research</h3>
+                <p>Gain deeper insights into consumer behavior through in-depth interviews and analysis.</p>
+            </div>
+            <div class="card">
+                <h3>Data Analysis</h3>
+                <p>Make informed decisions with expert data interpretation and reporting.</p>
+            </div>
+        </div>
+    </section>
 
+    <footer>
+        <p>&copy; 2025 Blauw Research. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-
