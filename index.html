@@ -3,106 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Replica</title>
+    <title>Website Example</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #333;
+            box-sizing: border-box;
         }
 
-        header {
+        .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px;
-            background-color: #f4f4f4;
         }
 
-        header .logo {
-            font-size: 24px;
-            font-weight: bold;
+        .text-section {
+            flex: 1;
+            padding-right: 20px;
         }
 
-        header nav a {
-            margin: 0 15px;
-            text-decoration: none;
+        .text-section h1 {
+            font-size: 2.5rem;
             color: #333;
         }
 
-        .hero {
-            text-align: center;
-            padding: 100px 20px;
-            background-color: #e8f4ff;
+        .text-section p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.5;
         }
 
-        .hero h1 {
-            font-size: 48px;
-            margin: 0;
+        .image-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .hero p {
-            font-size: 18px;
-            margin: 20px 0;
-        }
-
-        .hero img {
-            width: 300px;
-            border-radius: 15px;
-            margin-top: 20px;
-        }
-
-        .content {
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .content h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-        .content p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #f4f4f4;
-            margin-top: 20px;
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="logo">Mijn Website</div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">Over</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <section class="hero" id="home">
-        <h1>Welkom op mijn website</h1>
-        <p>Dit is een replica van het ontwerp dat je hebt gedeeld.</p>
-        <img src="Nick_VIP_1.jpeg" alt="Hero Image">
-    </section>
-
-    <section class="content" id="about">
-        <h2>Over Ons</h2>
-        <p>
-            Wij bieden de beste oplossingen om je bedrijf te laten groeien. 
-            Met een passie voor design en functionaliteit maken we unieke ervaringen.
-        </p>
-    </section>
-
-    <footer>
-        &copy; 2025 Mijn Website. Alle rechten voorbehouden.
-    </footer>
+    <div class="container">
+        <div class="text-section">
+            <h1>Welcome to Our Website</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin leo et lectus bibendum, ac efficitur eros feugiat. Fusce a nisl sit amet sapien suscipit dignissim. Integer at erat nec lorem vehicula pulvinar ut non justo.</p>
+        </div>
+        <div class="image-section">
+            <img src="example-image.jpg" alt="Example Image">
+        </div>
+    </div>
 </body>
 </html>
+
 
