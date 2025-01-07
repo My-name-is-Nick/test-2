@@ -3,183 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Clone</title>
+    <title>Website Replica</title>
     <style>
-        /* Algemene stijlen */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
             color: #333;
         }
 
         header {
-            background-color: #f3f4f6;
-            padding: 20px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 20px;
+            background-color: #f4f4f4;
         }
 
         header .logo {
             font-size: 24px;
             font-weight: bold;
-            color: #1a73e8;
-        }
-
-        header nav {
-            display: flex;
-            gap: 20px;
         }
 
         header nav a {
+            margin: 0 15px;
             text-decoration: none;
             color: #333;
-            font-weight: 500;
-        }
-
-        header nav a:hover {
-            color: #1a73e8;
         }
 
         .hero {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 60px 40px;
-            background-color: #ffffff;
-        }
-
-        .hero .text {
-            max-width: 50%;
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #e8f4ff;
         }
 
         .hero h1 {
             font-size: 48px;
-            color: #1a73e8;
-            margin-bottom: 20px;
+            margin: 0;
         }
 
         .hero p {
             font-size: 18px;
-            margin-bottom: 30px;
-        }
-
-        .hero button {
-            background-color: #1a73e8;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .hero button:hover {
-            background-color: #1558b3;
+            margin: 20px 0;
         }
 
         .hero img {
-            max-width: 40%;
-            border-radius: 10px;
+            width: 300px;
+            border-radius: 15px;
+            margin-top: 20px;
         }
 
-        .section {
-            padding: 40px;
-            background-color: #f9fafb;
+        .content {
+            padding: 40px 20px;
             text-align: center;
         }
 
-        .section h2 {
-            font-size: 32px;
+        .content h2 {
+            font-size: 36px;
             margin-bottom: 20px;
         }
 
-        .section p {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-
-        .section .cards {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .card {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 20px;
-            max-width: 300px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .card h3 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            color: #1a73e8;
-        }
-
-        .card p {
+        .content p {
             font-size: 16px;
+            line-height: 1.6;
         }
 
         footer {
-            padding: 20px;
             text-align: center;
-            background-color: #f3f4f6;
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 14px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">Blauw</div>
+        <div class="logo">Mijn Website</div>
         <nav>
-            <a href="#">Expertises</a>
-            <a href="#">Methoden</a>
-            <a href="#">Branches</a>
-            <a href="#">Cases</a>
-            <a href="#">Over ons</a>
+            <a href="#home">Home</a>
+            <a href="#about">Over</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="text">
-            <h1>Working together for market-driven growth</h1>
-            <p>Market research firm Blauw Research generates the right insights and helps you make better choices that lead to continuous growth.</p>
-            <button>Learn More</button>
-        </div>
-        <img src="https://via.placeholder.com/600x400" alt="Hero Image">
+    <section class="hero" id="home">
+        <h1>Welkom op mijn website</h1>
+        <p>Dit is een replica van het ontwerp dat je hebt gedeeld.</p>
+        <img src="Nick_VIP_1.jpeg" alt="Hero Image">
     </section>
 
-    <section class="section">
-        <h2>Our Expertise</h2>
-        <p>Discover our wide range of services to help you achieve your business goals.</p>
-        <div class="cards">
-            <div class="card">
-                <h3>Quantitative Research</h3>
-                <p>Understand the attitudes, perceptions, and behaviors of your target audience in a quantitative manner.</p>
-            </div>
-            <div class="card">
-                <h3>Qualitative Research</h3>
-                <p>Gain deeper insights into consumer behavior through in-depth interviews and analysis.</p>
-            </div>
-            <div class="card">
-                <h3>Data Analysis</h3>
-                <p>Make informed decisions with expert data interpretation and reporting.</p>
-            </div>
-        </div>
+    <section class="content" id="about">
+        <h2>Over Ons</h2>
+        <p>
+            Wij bieden de beste oplossingen om je bedrijf te laten groeien. 
+            Met een passie voor design en functionaliteit maken we unieke ervaringen.
+        </p>
     </section>
 
     <footer>
-        <p>&copy; 2025 Blauw Research. All rights reserved.</p>
+        &copy; 2025 Mijn Website. Alle rechten voorbehouden.
     </footer>
 </body>
 </html>
+
